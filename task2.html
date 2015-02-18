@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Task 2</title>
+
+
+
+<style type="text/css">
+
+	div {
+		height: 300px;
+		width: 300px;
+		background-color: white;
+		border: black 5px solid;
+		display: inline-block;
+	}
+	 
+	button:nth-child(5) {
+		margin-left: 250px;
+	}
+
+	/*.green {
+		background-color: green;
+	}
+
+	.red {
+		background-color: red;
+	}*/
+	
+</style>
+	
+</head>
+<body>
+
+	<div id="green"></div>
+	<div id="red"></div><br/>
+
+	<button onclick="chng1()">Make green</button>
+	<button onclick="chng2()">Make red</button>
+
+<script type="text/javascript">
+
+	function chng1 () {
+			// body...
+		document.getElementById('green').style.backgroundColor = "green";
+	};
+
+	function chng2 () {
+			// body...
+		document.getElementById('red').style.backgroundColor = "red";
+	};
+
+</script>
+
+</body>
+</html>
