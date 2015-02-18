@@ -1,0 +1,10 @@
+div {
+	height: 300px;
+	width: 300px;
+	background-color: white;
+	border: black 5px solid;
+}
+
+button:nth-child(4) {
+	margin-left: 80px
+}
