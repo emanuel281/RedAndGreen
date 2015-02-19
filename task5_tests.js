@@ -1,9 +1,21 @@
 
 if (document.getElementById("mySquare").style.backgroundColor === "green") {
-	setBackgroundColor("mySquare", "red");
+	//setBackgroundColor("mySquare", "red");
 	alert("Success!");
 }
-if (document.getElementById("mySquare").style.backgroundColor === "red"){
-	setBackgroundColor("mySquare", "green");
+else{
+	//setBackgroundColor("mySquare", "green");
+	alert("Failure!");
+};
+
+setBackgroundColor("mySquare", "red");
+
+
+if (document.getElementById("mySquare").style.backgroundColor === "red") {
+	//setBackgroundColor("mySquare", "red");
+	alert("Success!");
+}
+else{
+	//setBackgroundColor("mySquare", "green");
 	alert("Failure!");
 };
