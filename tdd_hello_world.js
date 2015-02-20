@@ -1,4 +1,4 @@
-var helloWorld = function() {
+function helloWorld () {
 	// body...
 	return "hello world!";
 }

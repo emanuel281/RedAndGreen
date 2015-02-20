@@ -1,5 +1,5 @@
-TestMyCode.run("testing hello world function", function(){
+TestMyCode.run("testing hello world function", function(assert){
     var result = helloWorld();
     // is the result as we expected?
-    Test.assert("hello world!", result);
+    assert.equals("hello world!", result);
 });

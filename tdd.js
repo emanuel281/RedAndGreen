@@ -1,29 +1,23 @@
-var TestMyCode = {
+var assert = {
 
-	this.run:function (nameOfTest, functionToExecute) {
+	equals:function (expectedResult, returnedResult) {
 		// body...
-		return this.functionToExecute();
-	},
-
-	this.assert:function(expectedResult, returnedResult){
+		var myDiv = new RedOrGreen("div");
 
 		if (expectedResult === returnedResult) {
-			//display green square
-			document.getElementsByTagName('div')[0].style.border = "5px black solid";
-			document.getElementsByTagName('div')[0].style.backgroundColor = "green";
+			myDiv.makeGreen();
 		}
+		else {
 
-		else if (expectedResult !== returnedResult){
-			//display red square
-			document.getElementsByTagName('div')[0].style.border = "5px black solid";
-			document.getElementsByTagName('div')[0].style.backgroundColor = "red";
-		}
-		
-		else{
-			//display red sqare
-			document.getElementsByTagName('div')[0].style.border = "5px black solid";
-			document.getElementsByTagName('div')[0].style.backgroundColor = "red";
+			myDiv.makeRed();
+
 		}
 	}
+};
 
+var TestMyCode = {
+	run:function(nameOfTest, functionToExecute){
+		this.testToRun = nameOfTest;
+		functionToExecute(assert);
+	}
 };
