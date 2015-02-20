@@ -1,13 +1,19 @@
 function RedOrGreen (elementTag) {
 	// body...
+
+	var newElement = document.createElement(elementTag);
+
 	this.makeGreen  = function() {
 		// body...
-		document.getElementsByTagName(elementTag)[0].style.backgroundColor = "green";
+		newElement.style.backgroundColor = "green";
+		newElement.innerHTML = "Passed!";
 	};
 
 	this.makeRed = function() {
 		// body...
-		document.getElementsByTagName(elementTag)[0].style.backgroundColor = "red";
+		newElement.style.backgroundColor = "red";
+		newElement.innerHTML = "Failed!";
 	};
-
+	
+	document.body.appendChild(newElement);
 };
