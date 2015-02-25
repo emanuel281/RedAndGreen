@@ -2,7 +2,7 @@ var changeElementColor = new RedOrGreen("div");
 
 changeElementColor.makeGreen();
 
-if(document.getElementsByTagName('div')[0].style.backgroundColor === "green"){
+if(document.body.lastChild.style.backgroundColor === "green"){
 	alert("Green!");
 }
 else{
@@ -11,7 +11,7 @@ else{
 
 changeElementColor.makeRed();
 
-if(document.getElementsByTagName('div')[0].style.backgroundColor === "red"){
+if(document.body.lastChild.style.backgroundColor === "red"){
 	alert("Red!");
 }
 else{
